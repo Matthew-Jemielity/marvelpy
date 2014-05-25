@@ -1,0 +1,6 @@
+include COPYING.txt
+include demo.py
+include MANIFEST.in
+include marvel/keys/private
+include marvel/keys/public
+
