@@ -17,8 +17,8 @@ class Object(Api):
             self._attribute[key] = kwargs[key]
         from marvel.api.image import Image
         self._attribute["thumbnail"] = None if kwargs[
-                "thumbnail"
-            ] is None else Image(
+            "thumbnail"
+        ] is None else Image(
             kwargs["thumbnail"]["path"],
             kwargs["thumbnail"]["extension"]
         )
