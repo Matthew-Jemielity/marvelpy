@@ -9,11 +9,11 @@ class Parameter:
         # parameter must be {"key": "value"}
         try:
             if list(parameter.keys())[0] is not str(
-                list(parameter_.keys())[0]
+                list(parameter.keys())[0]
             ):
                 raise ParameterError
             if list(parameter.values())[0] is not str(
-                list(parameter_.values())[0]
+                list(parameter.values())[0]
             ):
                 raise ParameterError
         except (AttributeError, IndexError, TypeError):
