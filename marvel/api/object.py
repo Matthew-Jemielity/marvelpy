@@ -161,7 +161,8 @@ class ObjectCollection(Api):
             return self.call()
 
     def parameter(self, key, *args):
-        return self.__parameter.add(self.__parameters[key](*args))
+        self.__parameter.add(self.__parameters[key](*args))
+        return self
 
     def resource(self):
         return self.__resource

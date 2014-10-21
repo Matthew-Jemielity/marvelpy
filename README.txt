@@ -59,10 +59,7 @@ You're gonna have to devise your own plan for not giving the private key to ever
 
 4. Sample code to get character info on Cable:
 from marvel.api.character import CharacterCollection
-collection = CharacterCollection()
-collection.parameter("name", "Cable")
-collection.call()
-cable = collection.items()[0]
+cable = CharacterCollection().parameter("name", "Cable").call().items()[0]
 cable.name()
 cable.id()
 
