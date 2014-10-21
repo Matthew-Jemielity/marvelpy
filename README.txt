@@ -57,5 +57,14 @@ You're gonna have to devise your own plan for not giving the private key to ever
  - classes inheriting from ObjectConnection are iterable, returning a collection with further data
  - classes inheriting from ObjectConnection can have filters set before call() is used, this is handled by Parameters class
 
+4. Sample code to get character info on Cable:
+from marvel.api.character import CharacterCollection
+collection = CharacterCollection()
+collection.parameter("name", "Cable")
+collection.call()
+cable = collection.items()[0]
+cable.name()
+cable.id()
+
 Have fun using/extending/remaking it!
 
