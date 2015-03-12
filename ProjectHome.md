@@ -1,0 +1,2 @@
+The module contained herein is a Python3 wrapper for API released by Marvel Comics.
+Project was intended as means to gain further understanding of Python. It's not well tested, not well documented, not very performance-oriented, etc.
